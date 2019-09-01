@@ -5,7 +5,7 @@ class PigLatinizer
     return word if %w[and an in].include?(word) #one syllable exceptions
     letters = word.split("")
     letters.keep_if {|letter| letter != "."}
-    if letters.size > 1
+    if letters.size > 0
       until vowel?(letters[0])
         letters << letters.shift
       end
