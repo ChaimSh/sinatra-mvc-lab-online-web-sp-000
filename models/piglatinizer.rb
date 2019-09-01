@@ -21,7 +21,6 @@ class PigLatinizer
        word = letter_array.join("") + con.join("")
      end
      word + "ay"
-     binding.pry
    end
 
     def piglatinize_sentence(sentence)
