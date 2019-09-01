@@ -19,9 +19,9 @@ class PigLatinizer
          con << letter_array.shift
        end
        word = letter_array.join("") + con.join("")
-       binding.pry
      end
      word + "ay"
+     binding.pry
    end
 
     def piglatinize_sentence(sentence)
