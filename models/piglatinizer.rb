@@ -17,9 +17,9 @@ class PigLatinizer
        con = []
        while !letter_array.first.match(/[aAeEiIoOuU]/)
          con << letter_array.shift
+         binding.pry
        end
        word = letter_array.join("") + con.join("")
-       binding.pry
      end
      word + "ay"
    end
